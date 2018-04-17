@@ -10,8 +10,24 @@ Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. 
 
 ### How to configure?
 
-1. 
+#### Downloading and Extracting Slick2D and LWJGL
+1. Download Slick2D
+2. Download LWJGL standard bundle
+3. Extract the LWJGL zip (lwjgl-x.x.zip) file somewhere in your computer, remember or note down the location, you will need this later. We suggest you create a library (/lib) folder to store all these files in a well-known place.
+4. As of 9/16, the above Slick2D link will download a version that is not compatible with LWJGL 3. Try **bold** 2.9.3 instead.
+Setting Up Slick2D and LWJGL in NetBeans
+Extracted from LWJGL with Netbeans
 
+Open up NetBeans.
+Go to Tools --> Libraries in the menu bar.
+Click on the New Library button.
+Type in Slick2D or any other name that you want for the Library Name.
+Select Classpath tab for your newly created Library and then click the Add JAR/Folder... button.
+Go to where you extracted lwjgl-X.X.zip and add the following '.jar'('Ctrl' or 'Alt' to select multiple files)
+lwjgl.jar
+slick.jar
+jinput.jar
+lwjgl_util.jar (if want to use OpenGL's GLU class)
 # Header 1
 ## Header 2
 ### Header 3
