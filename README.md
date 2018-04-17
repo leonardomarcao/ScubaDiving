@@ -1,5 +1,5 @@
 ## Scuba Diving Game
-![Scuba Diving Game - GIF](https://i.imgur.com/WSTBOZo.mp4)
+![](https://i.imgur.com/WSTBOZo.gif)
 
 ### About
 
