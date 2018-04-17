@@ -4,14 +4,13 @@
 
 Project developed at the Paulista University on sustainable development. The Scuba Diving Game has a didactic purpose of helping other people understand a little about sustainability, with the main scenario being a scuba diver who collects garbage at the bottom of the ocean.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ### How does it work?
 
 Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. Slick2d is an easy to use set of tools and utilites wrapped around LWJGL and OpenGL bindings to make 2D Java game development easier.
 
-```markdown
-Syntax highlighted code block
+### How to configure?
+
+1. 
 
 # Header 1
 ## Header 2
@@ -28,7 +27,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For more details see [GitHub - Scuba Diving Game](https://github.com/leonardomarcao/ScubaDiving).
 
 ### Jekyll Themes
 
