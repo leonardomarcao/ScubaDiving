@@ -1,5 +1,5 @@
 ## Scuba Diving Game
-![](http://i.imgur.com/UvQGaZkl.jpg)
+<p align="center">![](http://i.imgur.com/UvQGaZkl.jpg)</p>
 
 ### About
 
