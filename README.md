@@ -1,12 +1,14 @@
-## Welcome to Scuba Diving Game
+## Scuba Diving Game
 
-You can use the [editor on GitHub](https://github.com/leonardomarcao/ScubaDiving/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### About
+
+Project developed at the Paulista University on sustainable development. The Scuba Diving Game has a didactic purpose of helping other people understand a little about sustainability, with the main scenario being a scuba diver who collects garbage at the bottom of the ocean.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### How does it work?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. Slick2d is an easy to use set of tools and utilites wrapped around LWJGL and OpenGL bindings to make 2D Java game development easier.
 
 ```markdown
 Syntax highlighted code block
