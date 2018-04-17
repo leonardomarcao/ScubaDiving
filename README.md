@@ -1,4 +1,5 @@
 ## Scuba Diving Game
+![Scuba Diving Game - GIF](https://i.imgur.com/WSTBOZo.gifv)
 
 ### About
 
@@ -9,7 +10,7 @@ Project developed at the Paulista University on sustainable development. The Scu
 Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. Slick2d is an easy to use set of tools and utilites wrapped around LWJGL and OpenGL bindings to make 2D Java game development easier.
 
 ### How to configure?
-
+Following the steps of Slick2D [wiki] (http://slick.ninjacave.com/wiki/index.php?title=Main_Page)
 #### Downloading and Extracting Slick2D and LWJGL
 1. Download [Slick2D](http://slick.ninjacave.com/)
 2. Download LWJGL **[2.9.3](https://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.3/)**
