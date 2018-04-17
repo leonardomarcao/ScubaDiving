@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emitter imageName="" name="Bubble Particle Left">
+  <spawnInterval enabled="true" max="300" min="300"/>
+  <spawnCount enabled="true" max="2" min="1"/>
+  <initialLife enabled="false" max="1000.0" min="1000.0"/>
+  <initialSize enabled="true" max="10.0" min="3.0"/>
+  <xOffset enabled="true" max="-10.0" min="50.0"/>
+  <yOffset enabled="true" max="20.0" min="0"/>
+  <initialDistance enabled="false" max="0" min="0.0"/>
+  <speed enabled="true" max="0.001" min="0.001"/>
+  <length enabled="false" max="20" min="5"/>
+  <spread enable="true" value="3"/>
+  <angularOffset value="5.0"/>
+  <growthFactor value="2.0"/>
+  <gravityFactor value="-1"/>
+  <windFactor value="4"/>
+  <startAlpha value="120"/>
+  <endAlpha value="30"/>
+  <color>
+    <step b="255" g="255" offset="2" r="255"/>    
+    <step b="73" g="185" offset="2" r="0"/>
+    <step b="255" g="255" offset="2" r="255"/>    
+  </color>
+</emitter>
