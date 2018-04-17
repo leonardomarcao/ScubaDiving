@@ -10,45 +10,31 @@ Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. 
 
 ### How to configure?
 
-#### Downloading and Extracting Slick2D and LWJGL
-1. Download Slick2D
-2. Download LWJGL standard bundle
+#### - Downloading and Extracting Slick2D and LWJGL
+1. Download [Slick2D](http://slick.ninjacave.com/)
+2. Download LWJGL **[2.9.3](https://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.3/)**
 3. Extract the LWJGL zip (lwjgl-x.x.zip) file somewhere in your computer, remember or note down the location, you will need this later. We suggest you create a library (/lib) folder to store all these files in a well-known place.
-4. As of 9/16, the above Slick2D link will download a version that is not compatible with LWJGL 3. Try **bold** 2.9.3 instead.
-Setting Up Slick2D and LWJGL in NetBeans
-Extracted from LWJGL with Netbeans
 
-Open up NetBeans.
-Go to Tools --> Libraries in the menu bar.
-Click on the New Library button.
-Type in Slick2D or any other name that you want for the Library Name.
-Select Classpath tab for your newly created Library and then click the Add JAR/Folder... button.
-Go to where you extracted lwjgl-X.X.zip and add the following '.jar'('Ctrl' or 'Alt' to select multiple files)
-lwjgl.jar
-slick.jar
-jinput.jar
-lwjgl_util.jar (if want to use OpenGL's GLU class)
-# Header 1
-## Header 2
-### Header 3
+#### -Setting Up Slick2D and LWJGL in NetBeans
+- Extracted from LWJGL with Netbeans
+1. Open up NetBeans.
+2. Go to Tools --> Libraries in the menu bar.
+3. Click on the New Library button.
+4. Type in Slick2D or any other name that you want for the Library Name.
+5. Select Classpath tab for your newly created Library and then click the Add JAR/Folder... button.
+6. Go to where you extracted lwjgl-X.X.zip and add the following '.jar'('Ctrl' or 'Alt' to select multiple files)
+   1. lwjgl.jar
+   2. slick.jar
+   3. jinput.jar
+   4. lwjgl_util.jar (if want to use OpenGL's GLU class)
 
-- Bulleted
-- List
+#### - Setting Up a Project to use LWJGL in NetBeans
+- In a new Java project:
+1. Right-Click your project node or go to File>Project Properties and select Libraries
+2. Add your Slick2D Library , created as instructed above
+3. Select Run
+4. On VM Options put the following:
+   `-Djava.library.path=<lwjgl-X.X path>/native/<linux|macosx|solaris|windows>`
+Note: Remember to select the natives of your operating system.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub - Scuba Diving Game](https://github.com/leonardomarcao/ScubaDiving).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/leonardomarcao/ScubaDiving/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+After all the steps above, the Scuba Diving Game project can now be compiled.
