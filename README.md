@@ -1,5 +1,5 @@
 ## Scuba Diving Game
-<p align="center"><img src="http://i.imgur.com/UvQGaZkl.jpg" alt=""></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=x9mtLNFgO_s"><img src="https://i.imgur.com/AOlRFtY.png" alt="Scuba Diving - Game project on sustainable development"></a></p>
 
 ### About
 
