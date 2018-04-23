@@ -31,7 +31,8 @@ public class SplashScreen extends BasicGameState {
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
             //initialize logo image in splash screen  
             g.fillRect(0, 0, 800, 600);
-            g.drawImage(logoImg, 200, 200);                                   
+            g.drawImage(logoImg, ((ScubaDiving.WIDTH/2) - (logoImg.getWidth()/2)), 
+                    ((ScubaDiving.HEIGHT/2) - (logoImg.getHeight()/2)));                                   
 	}
 
 	// update-method with all the magic happening in it

@@ -4,7 +4,7 @@
   <spawnCount enabled="true" max="2" min="1"/>
   <initialLife enabled="false" max="1000.0" min="1000.0"/>
   <initialSize enabled="true" max="10.0" min="3.0"/>
-  <xOffset enabled="true" max="-10.0" min="50.0"/>
+  <xOffset enabled="true" max="-5.0" min="50.0"/>
   <yOffset enabled="true" max="20.0" min="0"/>
   <initialDistance enabled="false" max="0" min="0.0"/>
   <speed enabled="true" max="0.001" min="0.001"/>

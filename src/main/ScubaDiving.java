@@ -1,7 +1,5 @@
 package main;
-import screens.MainMenu;
-import screens.GameOver;
-import screens.InitialScene;
+import screens.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.AppGameContainer;
@@ -17,6 +15,8 @@ public class ScubaDiving extends StateBasedGame{
         public static final int MAINMENU      = 1;
         public static final int INITIAL_SCENE = 2;
         public static final int GAMEOVER = 3;
+        public InitialScene initial;
+        public MainMenu mainMenu;        
         
         // Application Properties
         public static final int WIDTH   = 800;
@@ -35,17 +35,17 @@ public class ScubaDiving extends StateBasedGame{
         public void initStatesList(GameContainer gc) throws SlickException {
             /* The first state added will be the one that is loaded first, 
             when the application is launched. After, other states are add.*/
-            
+            initial = new InitialScene();
             //state for splash screen
-            //this.addState(new SplashScreen());
+            this.addState(new SplashScreen());
             //state for mainmenu           
-            this.addState(new MainMenu());
+            this.addState(new MainMenu(initial));            
             //state for initial scene
-            this.addState(new InitialScene());
+            this.addState(initial);
             //state for game over
-            this.addState(new GameOver());
+            this.addState(new GameOver(initial));
         }   
-
+                        
         //main
 	public static void main(String[] args)
 	{

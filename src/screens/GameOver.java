@@ -30,13 +30,19 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 import main.ScubaDiving;
+import org.newdawn.slick.Color;
 import org.newdawn.slick.Input;
 
-public class GameOver extends BasicGameState {
+public class GameOver extends BasicGameState{
 
 	// ID we return to class 'Application'
 	public static final int ID = 3;
+        private int points;
+        InitialScene initialScene;
         
+        public GameOver(InitialScene _initialScene){
+            initialScene = _initialScene;
+        }        
         
 	// init-method for initializing all resources
 	@Override
@@ -47,8 +53,10 @@ public class GameOver extends BasicGameState {
 	// render-method for all the things happening on-screen
 	@Override
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
-                g.drawString("GAME OVER \n "
-                           + "Press escape to close", ScubaDiving.WIDTH/2, ScubaDiving.HEIGHT/2);
+                g.drawString("      GAME OVER"
+                           + "\nPress escape to close"
+                           + "\n  Points record: "  + initialScene.points, 300, ScubaDiving.HEIGHT/2);
+                g.setColor(Color.yellow);
 	}
 
 	// update-method with all the magic happening in it
@@ -58,8 +66,8 @@ public class GameOver extends BasicGameState {
                 //escape means, close the program
 		if(in.isKeyPressed(Input.KEY_ESCAPE)){
 			System.exit(0);
-		}   
-	}
+		}
+	}                
 
 	// Returning 'ID' from class 'SplasScreen'
 	@Override
