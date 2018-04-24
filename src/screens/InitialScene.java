@@ -52,6 +52,7 @@ public class InitialScene extends BasicGameState {
     private Rectangle enemyRect1, enemyRect2;
     private int diverHealth = 100;
     private Random ran;
+    private Color collider;
 
     // ID we return to class 'Application'
     public static final int ID = 2;    
@@ -181,6 +182,8 @@ public class InitialScene extends BasicGameState {
         //blend mode of system particle
         systemBubbleParticleRight.setBlendingMode(ParticleSystem.BLEND_ADDITIVE);
         systemBubbleParticleLeft.setBlendingMode(ParticleSystem.BLEND_ADDITIVE);
+        //set color hack collider
+        collider = new Color(Color.transparent);
     }
 
     // render-method for all the things happening on-screen
@@ -207,6 +210,10 @@ public class InitialScene extends BasicGameState {
         g.drawString(Integer.toString(points), 75, 30);
         g.setColor(new Color(234, 32, 39));
         g.drawString(Integer.toString(diverHealth) + "%", 75, 52);
+        g.setColor(collider); 
+        g.draw(div);           
+        g.draw(enemyRect1);
+        g.draw(enemyRect2);
     }
 
     // update-method with all the magic happening in it
@@ -423,7 +430,7 @@ public class InitialScene extends BasicGameState {
                 Logger.getLogger(InitialScene.class.getName()).log(Level.SEVERE, null, ex);
             }
             gc.resume();
-            sbg.enterState(3, new transition.MosaicTransitionOut(450f), new transition.MosaicTransitionIn(0.5f));
+            sbg.enterState(3, new transition.MosaicTransitionOut(450f), new transition.MosaicTransitionIn(0.3f));
         }
         if (yDiver <= 0) {
             yDiver += delta * speedDiver;
@@ -431,6 +438,14 @@ public class InitialScene extends BasicGameState {
         //escape means, close the program
         if (in.isKeyPressed(Input.KEY_ESCAPE)) {
             System.exit(0);
+        }
+        //hack collider
+        if (in.isKeyPressed(Input.KEY_G)){
+            if (collider.getRed() == 0 && collider.getGreen() == 0 && collider.getBlue() == 0){
+                collider = new Color(142, 68, 173);
+            }else{
+                collider = new Color(Color.transparent);
+            }
         }
     }
 
@@ -485,8 +500,8 @@ public class InitialScene extends BasicGameState {
             new Image("Assets\\InitialScene\\Enemies\\31.png"),};
         enemyAnimation1 = new Animation(enemyImage, ANIMATION_SPEED_ENEMY);
         enemyAnimation2 = enemyAnimation1;
-        enemyRect1 = new Rectangle(xEnemy1, yEnemy1, 32, enemyImage[0].getHeight());
-        enemyRect2 = new Rectangle(xEnemy2, yEnemy2, 32, enemyImage[0].getHeight());
+        enemyRect1 = new Rectangle(xEnemy1, yEnemy1, enemyImage[0].getWidth(), enemyImage[0].getHeight());
+        enemyRect2 = new Rectangle(xEnemy2, yEnemy2, enemyImage[0].getWidth(), enemyImage[0].getHeight());
     }
 
     /**

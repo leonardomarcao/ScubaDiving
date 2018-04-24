@@ -76,7 +76,7 @@ public class MainMenu extends BasicGameState {
                 Input in = gc.getInput();
 		if (in.isKeyPressed(Input.KEY_ENTER)){
                     startGame.play(1.0f, 0.3f);
-                    sbg.enterState(2, new MosaicTransitionOut(450f), new MosaicTransitionIn(0.5f));             
+                    sbg.enterState(2, new MosaicTransitionOut(450f), new MosaicTransitionIn(0.3f));             
                     initialScene.setUnderWaterLoop();                    
                 }  
                 //escape means, close the program
