@@ -1,4 +1,8 @@
 ## Scuba Diving Game
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d113af0da84b4ab9b17b8ffc29c58ecf?branch=admin-javafx)](https://app.codacy.com/project/leonardomarcao/ScubaDiving/dashboard)
+
 <p align="center"><a target="_blank" href="https://www.youtube.com/watch?v=x9mtLNFgO_s"><img src="https://i.imgur.com/AOlRFtY.png" alt="Scuba Diving - Game project on sustainable development"></a></p>
 
 ### About
@@ -9,7 +13,8 @@ Game project developed at the Paulista University on sustainable development. Th
 
 Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. Slick2d is an easy to use set of tools and utilites wrapped around LWJGL and OpenGL bindings to make 2D Java game development easier.
 
-### How to configure?
+### Instalattion
+
 Following the steps of Slick2D [wiki](http://slick.ninjacave.com/wiki/index.php?title=Main_Page)
 #### Downloading and Extracting Slick2D and LWJGL
 1. Download [Slick2D](http://slick.ninjacave.com/)
@@ -40,3 +45,27 @@ In a new Java project:
 Note: Remember to select the natives of your operating system.
 
 After all the steps above, the Scuba Diving Game project can now be compiled.
+
+### License 
+
+MIT License
+
+Copyright (c) 2018 Leonardo Marcão
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
