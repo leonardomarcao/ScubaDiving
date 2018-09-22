@@ -5,15 +5,15 @@
 
 <p align="center"><a target="_blank" href="https://www.youtube.com/watch?v=x9mtLNFgO_s"><img src="https://i.imgur.com/AOlRFtY.png" alt="Scuba Diving - Game project on sustainable development"></a></p>
 
-### About
+## About
 
 Game project developed at the Paulista University on sustainable development. The Scuba Diving Game has a didactic purpose of helping other people understand a little about sustainability, with the main scenario being a scuba diver who collects garbage at the bottom of the ocean.
 
-### How does it work?
+## How does it work?
 
 Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. Slick2d is an easy to use set of tools and utilites wrapped around LWJGL and OpenGL bindings to make 2D Java game development easier.
 
-### Instalattion
+## Instalattion
 
 Following the steps of Slick2D [wiki](http://slick.ninjacave.com/wiki/index.php?title=Main_Page)
 #### Downloading and Extracting Slick2D and LWJGL
@@ -46,7 +46,7 @@ Note: Remember to select the natives of your operating system.
 
 After all the steps above, the Scuba Diving Game project can now be compiled.
 
-### License 
+## License 
 
 MIT License
 
