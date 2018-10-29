@@ -13,6 +13,9 @@ Game project developed at the Paulista University on sustainable development. Th
 
 Scuba Diving Game was developed through a 2D Java Game Library, called Slick2D. Slick2d is an easy to use set of tools and utilites wrapped around LWJGL and OpenGL bindings to make 2D Java game development easier.
 
+### Class Diagram
+<p align="center"><img src="https://github.com/leonardomarcao/ScubaDiving/blob/master/classDiagram/ClassDiagramScubaDiving.png?raw=true"></p>
+
 ## Instalattion
 
 Following the steps of Slick2D [wiki](http://slick.ninjacave.com/wiki/index.php?title=Main_Page)
@@ -50,7 +53,7 @@ After all the steps above, the Scuba Diving Game project can now be compiled.
 
 MIT License
 
-Copyright (c) 2018 Leonardo Marc√£o
+Copyright (c) 2018 Leonardo Marc„o
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
